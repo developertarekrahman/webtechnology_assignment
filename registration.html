@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Registration Form</h2>
+
+      <form action="#" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label>Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male" class="inline">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female" class="inline">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other" class="inline">Other</label>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies[]" value="Reading" />
+        <label for="reading" class="inline">Reading</label>
+
+        <input type="checkbox" id="sports" name="hobbies[]" value="Sports" />
+        <label for="sports" class="inline">Sports</label>
+
+        <input
+          type="checkbox"
+          id="traveling"
+          name="hobbies[]"
+          value="Traveling"
+        />
+        <label for="traveling" class="inline">Traveling</label>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select Country</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="India">India</option>
+          <option value="Canada">Canada</option>
+          <option value="USA">USA</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms"
+          value="accepted"
+          required
+        />
+        <label for="terms" class="inline">
+          I agree to the Terms and Conditions
+        </label>
+
+        <button type="submit">Register</button>
+        <button type="reset" class="reset">Reset</button>
+      </form>
+
+      <p>
+        Already have an account?
+        <a href="login.html">Login Here</a>
+      </p>
+    </div>
+  </body>
+</html>
